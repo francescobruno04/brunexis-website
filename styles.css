@@ -676,8 +676,17 @@ button { font: inherit; background: none; border: 0; cursor: pointer; color: inh
 }
 .doc ul { padding-left: 20px; margin: 8px 0 16px; }
 .doc li { margin-bottom: 6px; }
-.doc a { color: var(--brand); }
-.doc a:hover { text-decoration: underline; }
+.doc a:not(.btn) {
+
+  color: var(--brand);
+
+}
+
+.doc a:not(.btn):hover {
+
+  text-decoration: underline;
+
+}
 .doc-meta {
   font-size: 13px;
   color: var(--muted-2);
